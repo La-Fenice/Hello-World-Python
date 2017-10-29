@@ -1,1 +1,1 @@
-web: python dealscraper/hello.py
+web: gunicorn main:wsgi --log-file -
