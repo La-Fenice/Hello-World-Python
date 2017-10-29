@@ -1,8 +1,8 @@
-from flask import Flask
+import flask
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
-@app.route('/')
-def source():
+@app.route("/")
+def index():
     html = "Hello World!\nHow you doing?"
     print(html)
