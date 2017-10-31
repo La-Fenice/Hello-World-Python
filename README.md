@@ -1,4 +1,4 @@
-Displaying Hello World, current time and banner.
+Webapp displaying Hello World and some other information.
 
 Made using Python and Flask framework.
 
