@@ -4,7 +4,7 @@
   <h1>About me</h1>
   <h3>I am a third year DCU Student studying Computer Science!</h3>
   <p> My interest for computing is fueled by my innovation. I love coming up with new practical app ideas and
-      solutions to problems. I enjoy coding and have dealt with a few languages over the years!</p>
+      solutions to problems. I enjoy coding and have dealt with a few languages over the years!e</p>
   <ul>
     <li>Python</li>
     <li>Java</li>
@@ -16,4 +16,29 @@
     <li>HTML/CSS</li>
     <li>Assembly</li>
   </ul>
+  <script>
+  var mastercardfacts = []
+  mastercardfacts[0] = "Mastercards network maintains a processing performance of 130 milliseconds per transaction.";
+  mastercardfacts[1] = "Ajaypal Singh Banga is the current CEO.";
+  mastercardfacts[2] = "The Global Operations Headquarters is located in O'Fallon, Missouri.";
+  mastercardfacts[3] = "Mastercard has 11,900 employees!";
+  mastercardfacts[4] = "Mastercard Dublin currently employs 200 people!";
+  mastercardfacts[5] = "Mastercard's vision is based off the goal of making people's lives easier by applying the latest technologies to advanced payment systems and solutions.";
+  mastercardfacts[6] = "Mastercard connects 2 billion card holders to over 40 million merchants.";
+  mastercardfacts[7] = "Mastercard operates in over 200 countries!";
+  mastercardfacts[8] = "Mastercard have committed to getting 500 million people financially included by 2020.";
+
+  function getFact() {
+    var randomNum = Math.floor(Math.random()*(mastercardfacts.length));
+    document.getElementById('mfact').innerHTML = mastercardfacts[randomNum];
+  }
+
+  </script>
+  <h3>Enough about me, click the fact button below for random information about Mastercard!</h3>
+  <div id="button">
+  <button onclick="getFact()">Random Fact!</button>
+  </div>
+
+  <h4 id="mfact"></h4>
+
 {% endblock %}
